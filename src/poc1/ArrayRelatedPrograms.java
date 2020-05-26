@@ -78,8 +78,28 @@ class ArrayDemo
 {
 
 	public int[] selectionSort(Object[] arr) {
-		// TODO Auto-generated method stub
-		return null;
+		int arrLength = arr.length;
+		for(int i=0; i<arrLength; i++)
+		{
+			int index = (int) arr[i];
+			for(int j = i+1; j<arrLength; j++)
+			{
+				if((int) arr[j] < index)
+				{
+					index = (int) arr[j];
+				}
+				//swap the no with min index that is index
+				int temp = (int) arr[index];
+				arr[index] = arr[i];
+				arr[i] = temp;
+			}
+		}
+		int[] intarray = new int[arrLength];
+		for(int i=0; i<arrLength; i++)
+		{
+			intarray[i] = (Integer)arr[i];
+		}
+		return intarray;
 	}
 
 	public List<Integer> divAndMoreThanNumber(Object[] arr) {
