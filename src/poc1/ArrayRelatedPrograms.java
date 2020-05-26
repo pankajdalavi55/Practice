@@ -108,8 +108,12 @@ class ArrayDemo
 	}
 
 	public int sumOfArray(Object[] arr) {
-		// TODO Auto-generated method stub
-		return 0;
+		int sum = 0;
+		for(int i=0; i<arr.length; i++)
+		{
+			sum += (Integer) arr[i];
+		}
+		return sum;
 	}
 
 	public int countSumOfTargetElement(Object[] arr) {
