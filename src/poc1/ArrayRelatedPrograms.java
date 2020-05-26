@@ -127,8 +127,8 @@ class ArrayDemo
 	}
 
 	public int secondMinimum(Object[] arr) {
-		// TODO Auto-generated method stub
-		return 0;
+		Arrays.sort(arr);
+		return (Integer)arr[1];
 	}
 
 	public int secondLargest(Object[] arr) {
